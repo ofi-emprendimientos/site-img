@@ -1,0 +1,197 @@
+<!-- Titlee Header -->
+<section class="sub-header">
+    <div class="sub-header-inner">
+        <p style="line-height: 1 2;">Nuestros</p>
+        <h1 style="line-height: 1 2; margin-bottom: 10 0pt;">Emprendimientos</h1>
+        <p style="line-height: 1 38; margin-top:20px;">
+            Conoce los proyectos que están dando vida a Punta de Rieles. 
+            Cada emprendimiento es el resultado del esfuerzo y la pasión de personas que, a través del trabajo, buscan un futuro mejor.
+        </p>
+    </div>
+</section>
+
+<!-- Sub Title Header -->
+<section class="notify-wrapper">
+    <div class="notify-inner-wrapper">   
+        <p style="line-height: 1 38;">
+            Al conocer nuestros proyectos, te conviertes en parte activa del cambio social. ¡Gracias por tu apoyo!
+        </p>
+    </div>
+</section>
+
+
+
+<!-- Informative Cards Container -->
+<section class="product-container">
+
+    <!-- Card 1 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 1" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Proyecto de Rehabilitación</h3>
+            <p class="product-description">Un enfoque integral para la rehabilitación de personas privadas de libertad.</p>
+            <div class="product-actions">
+                <a href="#" class="btn-ver-mas">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Impacto Social 1" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Impacto en la Comunidad</h3>
+            <p class="product-description">Cómo nuestras acciones están transformando la comunidad local.</p>
+            <div class="product-actions">
+                <a href="#" class="btn-ver-mas">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Reinserción Social 1" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Proceso de Reinserción</h3>
+            <p class="product-description">Iniciativas para reintegrar a las personas en la sociedad.</p>
+            <div class="product-actions">
+                <a href="#" class="btn-ver-mas">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 2" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Talleres Educativos</h3>
+            <p class="product-description">Talleres que brindan habilidades técnicas para la inserción laboral.</p>
+            <div class="product-actions">
+                <a href="#" class="btn-ver-mas">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar más cards de información aquí -->
+    
+</section>
+
+<style>
+    /* Estilos globales */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    .sub-header {
+        width: 100%;
+        padding: 26px 30px;
+    }
+    
+    .sub-header-inner {
+        max-width: 1400px;
+        padding: 0px 0px;
+        margin: 0 auto;
+    }
+
+    .notify-wrapper {
+        background: #f1c232;
+        width: calc(100% - 60px);
+        padding: 26px 30px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .notify-inner-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+
+    /* Estilos para el contenedor de cards */
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 20px 60px 20px;
+    }
+
+    .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product-info {
+        padding: 20px;
+    }
+
+    .product-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .product-actions {
+        display: flex;
+    }
+
+    .btn-ver-mas {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-ver-mas:hover {
+        background-color: #0056b3;
+    }
+
+    /* Estilos para móviles */
+    @media (max-width: 768px) {
+        .product-container {
+            grid-template-columns: repeat(2, 1fr); /* 2 cards por fila */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-container {
+            grid-template-columns: repeat(2, 1fr); /* 1 card por fila */
+        }
+    }
+</style>
+
+
