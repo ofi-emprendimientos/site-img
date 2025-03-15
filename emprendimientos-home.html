@@ -1,0 +1,208 @@
+<!-- Page Main image -->
+<section class="main-image-wrapper">
+    <div class="main-image-inner">
+        <h1>Bienvenido</h1>
+        <p>hola washi</p>
+    </div>
+</section>
+
+
+<!-- Page Title  -->
+<section class="sub-header">
+    <div class="sub-header-inner">
+        <p style="line-height: 1 2;">Nuestros</p>
+        <h1 style="line-height: 1 2; margin-bottom: 10 0pt;">Emprendimientos</h1>
+        <p style="line-height: 1 38; margin-top:20px;">
+            Conoce los proyectos que están dando vida a Punta de Rieles.
+            Cada emprendimiento es el resultado del esfuerzo y la pasión de personas que, a través del trabajo, buscan
+            un futuro mejor.
+        </p>
+    </div>
+</section>
+
+<!-- Sub Title Header -->
+<section class="notify-wrapper">
+    <div class="notify-inner-wrapper">
+        <p style="line-height: 1 38;">
+            Al conocer nuestros proyectos, te conviertes en parte activa del cambio social. ¡Gracias por tu apoyo!
+        </p>
+    </div>
+</section>
+
+
+<section class="product-container">
+
+    <div class="product-card" data-category="ksa-blanca">
+        <img src="https://raw.githubusercontent.com/ofi-emprendimientos/site-img/ace26a6dea4e09e2a4962b96da69cdf93358b512/img/ksa-blanca/adorno-de-mesa.png"
+            alt="Adorno de Mesa" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Adorno de Mesa</h3>
+            <p class="product-description">100% en madera.</p>
+            <span class="product-price">$300</span>
+            <div class="product-actions">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="product-card" data-category="ksa-blanca">
+        <img src="https://raw.githubusercontent.com/ofi-emprendimientos/site-img/ace26a6dea4e09e2a4962b96da69cdf93358b512/img/ksa-blanca/adorno-de-mesa-1.png"
+            alt="Tablero de Ajedrez" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Adorno de Mesa Contorno</h3>
+            <p class="product-description">100% en madera.</p>
+            <span class="product-price">$350</span>
+            <div class="product-actions">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="product-card" data-category="ksa-blanca">
+        <img src="https://raw.githubusercontent.com/ofi-emprendimientos/site-img/ace26a6dea4e09e2a4962b96da69cdf93358b512/img/ksa-blanca/adorno-porta-botellas.png"
+            alt="Adorno porta Botellas" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Adorno porta Botellas</h3>
+            <p class="product-description">100% en madera.</p>
+            <span class="product-price">$600</span>
+            <div class="product-actions">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Estilos globales */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #f9f9f9;
+        padding: 40px;
+    }
+
+    .main-image-wrapper {
+        height: 600px;
+        background-image: url(https://raw.githubusercontent.com/ofi-emprendimientos/site-img/4dffb6d0b33241cd16212e85ee66633b2a243fb8/img/u6/punta-de-rieles.jpg);
+        background-repeat: none;
+        background-attachment: scroll;
+        background-size: cover;
+        border-radius: 20px;
+        background-position: bottom center;
+    }
+
+    .sub-header {
+        width: 100%;
+        padding: 26px 30px;
+    }
+
+    .sub-header-inner {
+        max-width: 1400px;
+        padding: 0px 0px;
+        margin: 0 auto;
+    }
+
+    .notify-wrapper {
+        background: #f1c232;
+        width: 100%;
+    }
+
+    .notify-inner-wrapper {
+        background: #f1c232;
+        width: calc(100% - 60px);
+        padding: 26px 0px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .notify-inner-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Estilos para el contenedor de cards */
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 20px 60px 20px;
+        background: #f1c232;
+    }
+
+    .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+        width: 100%;
+        /* height: 200px; */
+        object-fit: cover;
+    }
+
+    .product-info {
+        padding: 20px;
+    }
+
+    .product-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .product-actions {
+        display: flex;
+    }
+
+    .btn-ver-mas {
+        background-color: #222222;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    .btn-ver-mas:hover {
+        background-color: #0c0c0c;
+    }
+
+    /* Estilos para móviles */
+    @media (max-width: 768px) {
+        .product-container {
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 cards por fila */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-container {
+            grid-template-columns: repeat(2, 1fr);
+            /* 1 card por fila */
+        }
+    }
+</style>
