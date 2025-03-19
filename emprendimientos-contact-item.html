@@ -1,28 +1,25 @@
 <div class="custom-page-wrapper">
-    <!-- Page Main image -->
-    <section class="main-image-wrapper">
-        <div class="main-image-inner">
-            <h1 class="home-heding">¿Cómo llegar?</h1>
-            <h2 class="home-sub-heding">Vení a visitar nuestros Emprendimientos Productivos</h2>
-            <a class="home-button" href="https://maps.app.goo.gl/sNCJegPkobXNzyGQ8">Ver en el Mapa</a>
-        </div>
-    </section>
 
     <!-- Page Title  -->
     <section class="sub-header">
         <div class="sub-header-inner">
-            <p style="line-height: 1 2;">¿Necesitas Ayuda?</p>
+            <p style="line-height: 1 2;">Estamos para Ayudarte</p>
             <h2 style="line-height: 1 2; margin-bottom: 10 0pt;">
-                Si deseas conocer más sobre nuestros productos, hacer un pedido o simplemente brindarnos tu apoyo, no
-                dudes en contactarnos.
+                Completa el formulario con tu mensaje y nos comunicaremos a la brevedad.
             </h2>
-            <h4 style="line-height: 1 38; font-weight: 400; margin-top:20px;">
-                En esta sección encontrarás nuestros datos de contacto, así como un formulario para realizar consultas.
-                Estaremos encantados de atenderte y responder a todas tus preguntas.
-            </h4>
         </div>
     </section>
-
+    <!-- Sub Title Header -->
+    <section class="notify-wrapper" style="background: black; margin-bottom:10px;">
+        <div class="notify-inner-wrapper">
+            <h2 style="line-height: 1 38; margin-top:10px;  color: white;">
+                Obtener más información sobre el producto
+            </h2>
+        </div>
+    </section>
+    <iframe class="google-map"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe3U9iRcZ81adcauJzeIA1wlo0Tmbhtjj1fYhg9Ihn_6Z3Whw/viewform?embedded=true"
+        frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
     <!-- Sub Title Header -->
     <section class="notify-wrapper">
         <div class="notify-inner-wrapper">
@@ -33,7 +30,6 @@
             </h3>
         </div>
     </section>
-
     <!-- Sub Title Header -->
     <section class="notify-wrapper">
         <div class="notify-inner-wrapper">
@@ -44,51 +40,6 @@
             </h3>
         </div>
     </section>
-
-    <script>
-        const telefono = document.getElementById('telefono');
-
-        telefono.addEventListener('click', (event) => {
-            event.preventDefault(); // Evita la navegación predeterminada del enlace
-
-            navigator.clipboard.writeText(telefono.textContent)
-                .then(() => {
-                    alert('Correo copiado al portapapeles');
-                })
-                .catch(err => {
-                    console.error('Error al copiar el correo: ', err);
-                });
-        });
-    </script>
-
-    <script>
-        const correo = document.getElementById('correo');
-
-        correo.addEventListener('click', (event) => {
-            event.preventDefault(); // Evita la navegación predeterminada del enlace
-
-            navigator.clipboard.writeText(correo.textContent)
-                .then(() => {
-                    alert('Correo copiado al portapapeles');
-                })
-                .catch(err => {
-                    console.error('Error al copiar el correo: ', err);
-                });
-        });
-    </script>
-
-
-    <!-- Sub Title Header -->
-    <section class="notify-wrapper dark">
-        <div class="notify-inner-wrapper">
-            <h2 style="line-height: 1 38; margin-top:20px;">
-                Contactate con Nosotros
-            </h2>
-        </div>
-    </section>
-    <iframe class="google-map"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSe3U9iRcZ81adcauJzeIA1wlo0Tmbhtjj1fYhg9Ihn_6Z3Whw/viewform?embedded=true"
-        frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 </div>
 
 <style>
@@ -436,7 +387,15 @@
         height: 1100px;
     }
 
+    .notify-wrapper.dark {
+        background: transparent;
+        width: 100%;
+        color: black;
+    }
 
+    .notify-wrapper.dark .notify-inner-wrapper {
+        padding-bottom: 5px;
+    }
 
     /* Estilos para móviles */
     @media (max-width: 960px) {
@@ -563,3 +522,29 @@
 
     @media (max-width: 480px) {}
 </style>
+
+<script>
+    const telefono = document.getElementById('telefono');
+    telefono.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita la navegación predeterminada del enlace
+        navigator.clipboard.writeText(telefono.textContent)
+            .then(() => {
+                alert('Correo copiado al portapapeles');
+            })
+            .catch(err => {
+                console.error('Error al copiar el correo: ', err);
+            });
+    });
+
+    const correo = document.getElementById('correo');
+    correo.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita la navegación predeterminada del enlace
+        navigator.clipboard.writeText(correo.textContent)
+            .then(() => {
+                alert('Correo copiado al portapapeles');
+            })
+            .catch(err => {
+                console.error('Error al copiar el correo: ', err);
+            });
+    });
+</script>
