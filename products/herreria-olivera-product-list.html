@@ -1,12 +1,296 @@
-<div class="product-card" data-category="herreria">
-    <img src="https://raw.githubusercontent.com/ofi-emprendimientos/site-img/caa411533b165b8a6b25e37afb86728fc6eb9cab/img/herreria-olivera/herreria-olivera.png"
-        alt="Herrería Olivera" class="product-image">
-    <div class="product-info">
-        <h3 class="product-title">Herraría en General</h3>
-        <p class="product-description">Trabajos en hierro a medida</p>
-        <span class="product-price"></span>
-        <a class="btn-producto" href="https://sites.google.com/view/emprendimientosu6/contacto-item">
-            Consultar
-        </a>
-    </div>
+<div class="custom-page-wrapper">
+    <!-- Page Main image -->
+    <section class="main-image-wrapper">
+        <div class="main-image-inner">
+            <a class="go-back" href="https://sites.google.com/view/emprendimientosu6/emprendimientos">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.12988 18.3101H15.1299C17.8899 18.3101 20.1299 16.0701 20.1299 13.3101C20.1299 10.5501 17.8899 8.31006 15.1299 8.31006H4.12988"
+                        stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6.43012 10.8099L3.87012 8.24994L6.43012 5.68994" stroke="#292D32" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Volver
+            </a>
+        </div>
+    </section>
+
+    <!-- Products List -->
+    <section class="product-container">
+        <div class="product-card" data-category="herreria">
+            <img src="https://raw.githubusercontent.com/ofi-emprendimientos/site-img/caa411533b165b8a6b25e37afb86728fc6eb9cab/img/herreria-olivera/herreria-olivera.png"
+                alt="Herrería Olivera" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Herraría en General</h3>
+                <p class="product-description">Trabajos en hierro a medida</p>
+                <span class="product-price"></span>
+                <a class="btn-producto" href="https://sites.google.com/view/emprendimientosu6/contacto-item">
+                    Consultar
+                </a>
+            </div>
+        </div>
+    </section>
+
 </div>
+
+<!-- Footer Content -->
+<footer class="site-footer-wrapper">
+    <div class="column">
+        <h6 style="margin-bottom: 10px; margin-left: 10px;">Teléfono</h6>
+        <h3 style="line-height: 1 38; margin-top:20px;">
+            <span style="margin-right: 10px; margin-left: 10px;">
+                <a href="tel:25138575">2513 8575</a>
+            </span>
+        </h3>
+    </div>
+    <div class="column">
+        <h6 style="margin-bottom: 10px; margin-left: 10px;">Horario</h6>
+        <h3 style="line-height: 1 38; margin-top:20px;">
+            <span style="margin-right: 10px; margin-left: 10px;">
+                Lunes a Viernes de 9:00hs a 17:00hs.
+            </span>
+        </h3>
+    </div>
+    <div class="column">
+        <h6 style="margin-bottom: 10px; margin-left: 10px;">Correo</h6>
+        <h3 style="line-height: 1 38; margin-top:20px;">
+            <span style="margin-right: 10px; margin-left: 10px;">
+                <a href="#" id="correo">inr-u6.emprendimientos@minterior.gub.uy</a>
+            </span>
+        </h3>
+    </div>
+</footer>
+<section class="copyright" style="text-align: center; padding: 10px;">
+    <small>2025 Todos los derechos reservados - Oficina de Emprendimientos Productivos U6</small>
+</section>
+
+
+
+<style>
+    /* Head Banner Styles */
+    .main-image-wrapper {
+        height: 600px;
+        background-image: url(https://raw.githubusercontent.com/ofi-emprendimientos/site-img/6dfb5fae391b639cb1c66e136c36266f23b57f60/img/banners/herreria-olivera.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        border-radius: 20px;
+        background-position: center center;
+        position: relative;
+        background-size: 100%;
+        transition: all 3s ease-in;
+        margin-bottom: 30px;
+        background-color: white;
+    }
+
+    .custom-page-wrapper {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 30px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .main-image-wrapper:hover {
+        background-size: 110%;
+        transition: all 3s ease-out;
+    }
+
+    .main-image-inner {
+        height: 100%;
+        background: linear-gradient(45deg, #0000002b, transparent);
+        border-radius: 20px;
+    }
+
+    /* Footer Styles */
+    .site-footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        background: black;
+        width: 100%;
+    }
+
+    .site-footer-wrapper .column {
+        padding: 20px 0px;
+        color: white;
+    }
+
+    .site-footer-wrapper .column a {
+        color: white;
+    }
+
+    /* Estilos globales */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 15px 15px 60px 15px;
+    }
+
+    .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilos para la imagen del producto */
+    .product-image {
+        width: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Información del producto */
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        font-size: 12px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .product-price {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .product-actions {
+        display: flex;
+    }
+
+    .btn-producto {
+        background-color: #a86cd0;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 21px;
+        font-size: 1rem;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3sease;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .btn-producto:hover {
+        background-color: #9150bb;
+        transition: background-color 0.3sease;
+    }
+
+    .go-back {
+        color: black;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        cursor: pointer;
+    }
+
+    .go-back svg {
+        margin-right: 5px;
+    }
+
+    /* Estilos para móviles */
+    @media (max-width: 960px) {
+        .product-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .site-footer-wrapper {
+            display: table;
+            padding-left: 20px;
+        }
+
+        .site-footer-wrapper .column h3 {
+            font-size: 15px;
+        }
+
+        .product-container {
+            padding: 20px 20px 20px 20px;
+        }
+
+        .product-title {
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .custom-page-wrapper {
+            padding: 20px;
+        }
+
+        .main-image-wrapper {
+            background-size: cover;
+        }
+
+        .home-heding {
+            font-size: 2rem;
+            font-weight: 800;
+            left: 30px;
+        }
+
+        .home-sub-heding {
+            font-size: 1rem;
+            left: 30px;
+        }
+
+        .home-button {
+            font-size: 1rem;
+            left: 25px;
+        }
+
+        .main-image-wrapper:hover {
+            background-size: cover;
+            transition: all 3s ease-out;
+        }
+    }
+</style>
