@@ -178,7 +178,67 @@
     </div>
 </div>
 
+<footer class="site-footer-wrapper">
+    <div class="column">
+        <h6 style="margin-bottom: 10px; margin-left: 10px;">Teléfono</h6>
+        <h3 style="line-height: 1 38; margin-top:20px;">
+            <span style="margin-right: 10px; margin-left: 10px;">
+                <a href="tel:25138575">2513 8575</a>
+            </span>
+        </h3>
+    </div>
+    <div class="column">
+        <h6 style="margin-bottom: 10px; margin-left: 10px;">Horario</h6>
+        <h3 style="line-height: 1 38; margin-top:20px;">
+            <span style="margin-right: 10px; margin-left: 10px;">
+                Lunes a Viernes de 9:00hs a 17:00hs.
+            </span>
+        </h3>
+    </div>
+    <div class="column">
+        <h6 style="margin-bottom: 10px; margin-left: 10px;">Correo</h6>
+        <h3 style="line-height: 1 38; margin-top:20px;">
+            <span style="margin-right: 10px; margin-left: 10px;">
+                <a href="#" id="correo">inr-u6.emprendimientos@minterior.gub.uy</a>
+            </span>
+        </h3>
+    </div>
+</footer>
+
+<section class="copyright" style="text-align: center; padding: 10px;">
+    <small>2025 Todos los derechos reservados - Oficina de Emprendimientos Productivos U6</small>
+</section>
+
 <style>
+    .site-footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        background: black;
+        width: 100%;
+    }
+
+    .site-footer-wrapper .column {
+        padding: 20px 0px;
+        color: white;
+    }
+
+    .site-footer-wrapper .column a {
+        color: white;
+    }
+
+    @media (max-width: 960px) {
+        .site-footer-wrapper {
+            display: table;
+            padding-left: 20px;
+        }
+
+        .site-footer-wrapper .column h3 {
+            font-size: 15px;
+        }
+    }
+
     /* Estilos globales */
     * {
         margin: 0;
@@ -641,3 +701,35 @@
 
     @media (max-width: 480px) {}
 </style>
+
+<script>
+    const telefono = document.getElementById('telefono');
+
+    telefono.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita la navegación predeterminada del enlace
+
+        navigator.clipboard.writeText(telefono.textContent)
+            .then(() => {
+                alert('Correo copiado al portapapeles');
+            })
+            .catch(err => {
+                console.error('Error al copiar el correo: ', err);
+            });
+    });
+</script>
+
+<script>
+    const correo = document.getElementById('correo');
+
+    correo.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita la navegación predeterminada del enlace
+
+        navigator.clipboard.writeText(correo.textContent)
+            .then(() => {
+                alert('Correo copiado al portapapeles');
+            })
+            .catch(err => {
+                console.error('Error al copiar el correo: ', err);
+            });
+    });
+</script>
